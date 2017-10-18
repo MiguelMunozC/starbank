@@ -34,9 +34,6 @@
                         <a class="navbar-item">
                             ¿Quiénes somos?
                         </a>
-                        <a class="navbar-item">
-                            Sedes
-                        </a>
                         <span class="navbar-item">
                 <a class="button is-white is-outlined is-small" href="login.php">
                   <span class="icon">

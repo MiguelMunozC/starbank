@@ -38,7 +38,7 @@
                 </div>
               </div>
 
-              <a class="button is-block is-info is-large">Ingresar</a>
+              <a class="button is-block is-info is-large" href="admin/admin.php">Ingresar</a>
             </form>
           </div>
           <p class="has-text-grey">
