@@ -18,6 +18,7 @@
             <div class="container">
                 <div class="navbar-brand">
                     <a class="navbar-item" href="">
+                        <i class="fa fa-star" aria-hidden="true"></i>
                         StarBank
                     </a>
                     <span class="navbar-burger burger" data-target="navbarMenu">
@@ -31,7 +32,7 @@
                         <a class="navbar-item is-active">
                             Inicio
                         </a>
-                        <a class="navbar-item">
+                        <a class="navbar-item" href="blog.html">
                             ¿Quiénes somos?
                         </a>
                         <a class="navbar-item">
@@ -54,7 +55,9 @@
     <div class="hero-body">
         <div class="container has-text-centered">
             <div class="column is-6 is-offset-3">
+
                 <h1 class="title">
+                    <i class="fa fa-star" aria-hidden="true"></i>
                     STARBANK
                 </h1>
                 <h2 class="subtitle">
