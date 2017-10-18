@@ -19,37 +19,33 @@
     <div class="hero-body">
       <div class="container has-text-centered">
         <div class="column is-4 is-offset-4">
-          <h3 class="title has-text-grey">Login</h3>
-          <p class="subtitle has-text-grey">Please login to proceed.</p>
+          <h3 class="title has-text-grey">StarBank</h3>
+          <p class="subtitle has-text-grey">Banca en L&iacute;nea.</p>
           <div class="box">
-            <figure class="avatar">
-              <img src="https://placehold.it/128x128">
+            <figure class="avatar is-128x128">
+              <img src="img/LOGO2.png">
             </figure>
             <form>
               <div class="field">
                 <div class="control">
-                  <input class="input is-large" type="email" placeholder="Your Email" autofocus="">
+                  <input class="input is-large" type="text" placeholder="Rut usuario" autofocus="">
                 </div>
               </div>
 
               <div class="field">
                 <div class="control">
-                  <input class="input is-large" type="password" placeholder="Your Password">
+                  <input class="input is-large" type="password" placeholder="Clave">
                 </div>
               </div>
-              <div class="field">
-                <label class="checkbox">
-                  <input type="checkbox">
-                  Remember me
-                </label>
-              </div>
-              <a class="button is-block is-info is-large">Login</a>
+
+              <a class="button is-block is-info is-large">Ingresar</a>
             </form>
           </div>
           <p class="has-text-grey">
-            <a href="../">Sign Up</a> &nbsp;·&nbsp;
-            <a href="../">Forgot Password</a> &nbsp;·&nbsp;
-            <a href="../">Need Help?</a>
+            <a href="../">¿Problemas con su Clave?</a> &nbsp;·&nbsp;
+              <a href="../">Contacto</a> &nbsp;·&nbsp;
+            <a href="../">Recomendaciones de Seguridad</a>
+
           </p>
         </div>
       </div>
