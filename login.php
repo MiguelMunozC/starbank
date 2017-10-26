@@ -19,7 +19,10 @@
     <div class="hero-body">
       <div class="container has-text-centered">
         <div class="column is-4 is-offset-4">
-          <h3 class="title has-text-grey">StarBank</h3>
+          <h3 class="title has-text-grey">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              StarBank
+          </h3>
           <p class="subtitle has-text-grey">Banca en L&iacute;nea.</p>
           <div class="box">
             <figure class="avatar is-128x128">
