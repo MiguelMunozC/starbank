@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Admin - Free Bulma template</title>
+  <title>Admin - StarBank</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
   <!-- Bulma Version 0.6.0 -->
@@ -51,11 +51,13 @@
       <div class="column is-3">
         <aside class="menu">
           <p class="menu-label">
-            General
+            Cliente
           </p>
           <ul class="menu-list">
-            <li><a class="is-active">Dashboard</a></li>
-            <li><a>Cuentas</a></li>
+            <li><a>Crear</a></li>
+            <li><a>Modificar</a></li>
+              <li><a>Eliminar</a></li>
+              <li><a>Consultar Saldo</a></li>
           </ul>
 <!--          <p class="menu-label">-->
 <!--            Administration-->
@@ -78,8 +80,8 @@
             Transacciones
           </p>
           <ul class="menu-list">
-            <li><a>Pagos</a></li>
-            <li><a>Transferir</a></li>
+            <li><a>Entre mis Cuentas</a></li>
+            <li><a>A Terceros</a></li>
           </ul>
         </aside>
       </div>
