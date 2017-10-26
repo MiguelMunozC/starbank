@@ -39,7 +39,7 @@
             Cliente
           </p>
           <ul class="menu-list">
-            <li><a>Crear</a></li>
+            <li><a href="Crear.php">Crear</a></li>
             <li><a>Modificar</a></li>
               <li><a>Eliminar</a></li>
               <li><a>Consultar Saldo</a></li>
