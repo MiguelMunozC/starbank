@@ -41,9 +41,15 @@
 				</p>
 				<ul class="menu-list">
 					<li><a href="Crear.php">Crear</a></li>
+<<<<<<< HEAD:admin/modificarCliente.php
 					<li><a href="modificarCliente.php">Modificar</a></li>
 					<li><a>Eliminar</a></li>
 					<li><a href="consultar.php">Consultar Saldo</a></li>
+=======
+					<li><a href="ModificarCliente.php">Modificar</a></li>
+					<li><a href="EliminarCliente.php">Eliminar</a></li>
+					<li><a>Consultar Saldo</a></li>
+>>>>>>> 0f17da70fc5851948aa75de8b1670c242390c96a:admin/ModificarCliente.php
 				</ul>
 				<p class="menu-label">
 					Transacciones
