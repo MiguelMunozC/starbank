@@ -17,7 +17,7 @@
   <nav class="navbar is-white">
     <div class="container">
       <div class="navbar-brand">
-        <a class="navbar-item brand-text" href="../">
+        <a class="navbar-item brand-text" href="admin.php">
             <i class="fa fa-star" aria-hidden="true"></i>
             StarBank
         </a>
@@ -27,23 +27,7 @@
           <span></span>
         </div>
       </div>
-      <div id="navMenu" class="navbar-menu">
-        <div class="navbar-start">
-          <a class="navbar-item" href="admin.php">
-            Home
-          </a>
-          <a class="navbar-item" href="admin.php">
-            Orders
-          </a>
-          <a class="navbar-item" href="admin.php">
-            Payments
-          </a>
-          <a class="navbar-item" href="admin.php">
-            Exceptions
-          </a>
-        </div>
 
-      </div>
     </div>
   </nav>
   <!-- END NAV -->
