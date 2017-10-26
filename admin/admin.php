@@ -30,7 +30,7 @@
 			</div>
 		</div>
 
-<<<<<<< HEAD
+
     </div>
   </nav>
   <!-- END NAV -->
@@ -44,7 +44,7 @@
           <ul class="menu-list">
             <li><a href="Crear.php">Crear</a></li>
             <li><a href="modificarCliente.php">Modificar</a></li>
-              <li><a>Eliminar</a></li>
+              <li><a href="EliminarCliente.php">Eliminar</a></li>
               <li><a href="consultar.php">Consultar Saldo</a></li>
           </ul>
 <!--          <p class="menu-label">-->
@@ -68,8 +68,8 @@
             Transacciones
           </p>
           <ul class="menu-list">
-            <li><a>Entre mis Cuentas</a></li>
-            <li><a>A Terceros</a></li>
+            <li><a >Entre mis Cuentas</a></li>
+            <li><a href="terceros.php">A Terceros</a></li>
           </ul>
         </aside>
       </div>
@@ -130,107 +130,7 @@
                   Events
                 </p>
                 <a href="#" class="card-header-icon" aria-label="more options">
-=======
-	</div>
-</nav>
-<!-- END NAV -->
-<div class="container">
-	<div class="columns">
-		<div class="column is-3">
-			<aside class="menu">
-				<p class="menu-label">
-					Cliente
-				</p>
-				<ul class="menu-list">
-					<li><a href="Crear.php">Crear</a></li>
-					<li><a href="ModificarCliente.php">Modificar</a></li>
-					<li><a href="EliminarCliente.php">Eliminar</a></li>
-					<li><a>Consultar Saldo</a></li>
-				</ul>
-				<!--          <p class="menu-label">-->
-				<!--            Administration-->
-				<!--          </p>-->
-				<!--          <ul class="menu-list">-->
-				<!--            <li><a>Team Settings</a></li>-->
-				<!--            <li>-->
-				<!--              <a>Manage Your Team</a>-->
-				<!--              <ul>-->
-				<!--                <li><a>Members</a></li>-->
-				<!--                <li><a>Plugins</a></li>-->
-				<!--                <li><a>Add a member</a></li>-->
-				<!--              </ul>-->
-				<!--            </li>-->
-				<!--            <li><a>Invitations</a></li>-->
-				<!--            <li><a>Cloud Storage Environment Settings</a></li>-->
-				<!--            <li><a>Authentication</a></li>-->
-				<!--          </ul>-->
-				<p class="menu-label">
-					Transacciones
-				</p>
-				<ul class="menu-list">
-					<li><a>Entre mis Cuentas</a></li>
-					<li><a>A Terceros</a></li>
-				</ul>
-			</aside>
-		</div>
-		<div class="column is-9">
-			<!--        <nav class="breadcrumb" aria-label="breadcrumbs">-->
-			<!--          <ul>-->
-			<!--            <li><a href="../../">Bulma</a></li>-->
-			<!--            <li><a href="../../">Templates</a></li>-->
-			<!--            <li><a href="../../">Examples</a></li>-->
-			<!--            <li class="is-active"><a href="#" aria-current="page">Admin</a></li>-->
-			<!--          </ul>-->
-			<!--        </nav>-->
-			<section class="hero is-info welcome is-small">
-				<div class="hero-body">
-					<div class="container">
-						<h1 class="title">
-							Hola, Usuario.
-						</h1>
-						<h2 class="subtitle">
-							I hope you are having a great day!
-						</h2>
-					</div>
-				</div>
-			</section>
-			<section class="info-tiles">
-				<div class="tile is-ancestor has-text-centered">
-					<div class="tile is-parent">
-						<article class="tile is-child box">
-							<p class="title">2.000 CLP</p>
-							<p class="subtitle">Saldo</p>
-						</article>
-					</div>
-					<div class="tile is-parent">
-						<article class="tile is-child box">
-							<p class="title">59k</p>
-							<p class="subtitle">Products</p>
-						</article>
-					</div>
-					<div class="tile is-parent">
-						<article class="tile is-child box">
-							<p class="title">3.4k</p>
-							<p class="subtitle">Open Orders</p>
-						</article>
-					</div>
-					<div class="tile is-parent">
-						<article class="tile is-child box">
-							<p class="title">19</p>
-							<p class="subtitle">Exceptions</p>
-						</article>
-					</div>
-				</div>
-			</section>
-			<div class="columns">
-				<div class="column is-6">
-					<div class="card events-card">
-						<header class="card-header">
-							<p class="card-header-title">
-								Events
-							</p>
-							<a href="#" class="card-header-icon" aria-label="more options">
->>>>>>> 0f17da70fc5851948aa75de8b1670c242390c96a
+
                   <span class="icon">
                     <i class="fa fa-angle-down" aria-hidden="true"></i>
                   </span>

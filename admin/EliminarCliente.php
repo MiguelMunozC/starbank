@@ -43,14 +43,14 @@
 					<li><a href="Crear.php">Crear</a></li>
 					<li><a href="ModificarCliente.php">Modificar</a></li>
 					<li><a href="EliminarCliente.php">Eliminar</a></li>
-					<li><a>Consultar Saldo</a></li>
+					<li><a href="consultar.php">Consultar Saldo</a></li>
 				</ul>
 				<p class="menu-label">
 					Transacciones
 				</p>
 				<ul class="menu-list">
 					<li><a>Entre mis Cuentas</a></li>
-					<li><a>A Terceros</a></li>
+					<li><a href="terceros.php">A Terceros</a></li>
 				</ul>
 			</aside>
 		</div>
