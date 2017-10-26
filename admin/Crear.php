@@ -102,7 +102,7 @@
                                    </div>
 
                               <div class="field">
-                                   <label class="label">DNI:</label>
+                                   <label class="label">RUT:</label>
                                    <div class="control">
                                         <input class="input" type="text" placeholder="77.777.777-7">
                                    </div>
