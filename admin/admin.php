@@ -41,10 +41,10 @@
             Cliente
           </p>
           <ul class="menu-list">
-            <li><ahref="Crear.php">Crear</a></li>
-            <li><ahref="modificarCliente.php">Modificar</a></li>
+            <li><a href="Crear.php">Crear</a></li>
+            <li><a href="modificarCliente.php">Modificar</a></li>
               <li><a>Eliminar</a></li>
-              <li><a>Consultar Saldo</a></li>
+              <li><a href="consultar.php">Consultar Saldo</a></li>
           </ul>
 <!--          <p class="menu-label">-->
 <!--            Administration-->

@@ -19,7 +19,7 @@
 <nav class="navbar is-white">
 	<div class="container">
 		<div class="navbar-brand">
-			<a class="navbar-item brand-text" href="../">
+			<a class="navbar-item brand-text" href="admin.php">
 				<i class="fa fa-star" aria-hidden="true"></i>
 				StarBank
 			</a>
@@ -40,10 +40,10 @@
 					Cliente
 				</p>
 				<ul class="menu-list">
-					<li><a>Crear</a></li>
-					<li><a>Modificar</a></li>
+					<li><a href="Crear.php">Crear</a></li>
+					<li><a href="modificarCliente.php">Modificar</a></li>
 					<li><a>Eliminar</a></li>
-					<li><a>Consultar Saldo</a></li>
+					<li><a href="consultar.php">Consultar Saldo</a></li>
 				</ul>
 				<p class="menu-label">
 					Transacciones

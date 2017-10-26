@@ -41,10 +41,10 @@
                          Cliente
                     </p>
                     <ul class="menu-list">
-                         <li><a>Crear</a></li>
+                         <li><a href="Crear.php">Crear</a></li>
                          <li><a href="modificarCliente.php">Modificar</a></li>
                          <li><a>Eliminar</a></li>
-                         <li><a href="consultar.php">Consultar Saldo</a></li>
+                         <li><a>Consultar Saldo</a></li>
                     </ul>
                     <!--          <p class="menu-label">-->
                     <!--            Administration-->
@@ -73,55 +73,35 @@
                </aside>
           </div>
           <div class="column is-9 field has-addons has-addons-centered">
-               <div class="column is-8 ">
-                    <div class="card">
-                         <header class="card-header">
-                              <p class="card-header-title card-color-success">
-                                   Crear Cliente
-                              </p>
+               <div class="column is-6 ">
+                    <table class="table">
+                         <thead>
+                         <tr>
+                              <th>Cuentas</th>
+                              <th>Saldo</th>
+                         </tr>
 
-                         </header>
-                         <div class="card-content">
-                              <div class="field">
-                                   <label class="label">Nombre:</label>
-                                   <div class="control">
-                                        <input class="input" type="text" placeholder="Nombre">
-                                   </div>
-                              </div>
-                              <div class="field">
-                                   <label class="label">Apellido</label>
-                                   <div class="control">
-                                        <input class="input" type="text" placeholder="Apellido">
-                                   </div>
-                              </div>
-                              <div class="field">
-                                        <label class="label">Emaiil:</label>
-                                        <div class="control">
-                                             <input class="input" type="email" placeholder="Rolejo@Rolejo.rl">
-                                        </div>
-                                   </div>
+                         </thead>
+                         <tfoot>
+                         <tr>
+                              <td>Cuenta Corriente</td>
+                              <td>$2000</td>
+                         </tr>
+                         <tr>
+                              <td>Linea de Credito</td>
+                              <td>$2.000.000</td>
+                         </tr>
+                         <tr>
+                              <td>Tarjeta de Credito</td>
+                              <td>2000 US</td>
+                         </tr>
 
-                              <div class="field">
-                                   <label class="label">DNI:</label>
-                                   <div class="control">
-                                        <input class="input" type="text" placeholder="77.777.777-7">
-                                   </div>
-                              </div>
 
-                              <div class="field">
-                                   <label class="label">Password:</label>
-                                   <div class="control">
-                                        <input class="input" type="password" placeholder="">
-                                   </div>
-                              </div>
+                         </tfoot>
 
-                         </div>
-                         <footer class="card-footer">
-                              <a href="#" class="card-footer-item">Crear</a>
 
-                              <a href="#" class="card-footer-item">Salir</a>
-                         </footer>
-                    </div>
+                    </table>
+                    <a class="button is-link is-inverted" href="admin.php">Salir</a>
                </div>
           </div>
      </div>
