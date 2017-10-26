@@ -40,9 +40,9 @@
 					Cliente
 				</p>
 				<ul class="menu-list">
-					<li><a>Crear</a></li>
-					<li><a>Modificar</a></li>
-					<li><a>Eliminar</a></li>
+					<li><a href="Crear.php">Crear</a></li>
+					<li><a href="ModificarCliente.php">Modificar</a></li>
+					<li><a href="EliminarCliente.php">Eliminar</a></li>
 					<li><a>Consultar Saldo</a></li>
 				</ul>
 				<p class="menu-label">
@@ -63,7 +63,7 @@
 					<div class="card is-primary">
 						<header class="card-header">
 							<p class="card-header-title">
-								Modificar Cliente
+								Eliminar Cliente
 							</p>
 						</header>
 						<div class="card-content">
@@ -80,76 +80,22 @@
 										</div>
 									</div>
 								</div>
-
-								<div class="field ">
-									<div class="label is-normal">
-										<label class="label">Nombre</label>
-									</div>
-									<div class="field-body">
-										<div class="field">
-											<div class="control">
-												<input class="input" type="text" placeholder="Nombre">
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="field ">
-									<div class="label is-normal">
-										<label class="label">Apellidos</label>
-									</div>
-									<div class="field-body">
-										<div class="field">
-											<div class="control">
-												<input class="input" type="text" placeholder="Apellidos">
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="field ">
-									<div class="label is-normal">
-										<label class="label">Password</label>
-									</div>
-									<div class="field-body">
-										<div class="field">
-											<div class="control">
-												<input class="input" type="password" placeholder="Password">
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="field ">
-									<div class="label is-normal">
-										<label class="label">E-mail</label>
-									</div>
-									<div class="field-body">
-										<div class="field">
-											<div class="control">
-												<input class="input" type="email" placeholder="E-mail">
-											</div>
-										</div>
-									</div>
-								</div>
+								<footer class="card-footer">
+									<a href="#" class="card-footer-item">Eliminar</a>
+									<a href="#" class="card-footer-item">Salir</a>
+								</footer>
 							</div>
 						</div>
-						<footer class="card-footer">
-							<a href="#" class="card-footer-item">Modificar</a>
-							<a href="#" class="card-footer-item">Salir</a>
-						</footer>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
-<script async type="text/javascript" src="../js/bulma.js"></script>
-<script src="https://unpkg.com/vue/dist/vue.js"></script>
+		<script async type="text/javascript" src="../js/bulma.js"></script>
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>
 
-<script>
+		<script>
 
-</script>
+		</script>
 
 </body>
 </html>
