@@ -86,33 +86,33 @@
 							<div class="field">
 								<label class="label">Nombre:</label>
 								<div class="control">
-									<input class="input" type="text" placeholder="Nombre" name="nombre">
+									<input class="input" type="text" placeholder="Nombre" name="nombre" required>
 								</div>
 							</div>
 							<div class="field">
 								<label class="label">Apellido</label>
 								<div class="control">
-									<input class="input" type="text" placeholder="Apellido" name="apellido">
+									<input class="input" type="text" placeholder="Apellido" name="apellido" required>
 								</div>
 							</div>
 							<div class="field">
 								<label class="label">Email:</label>
 								<div class="control">
-									<input class="input" type="email" placeholder="Rolejo@Rolejo.rl" name="email">
+									<input class="input" type="email" placeholder="Rolejo@Rolejo.rl" name="email" required>
 								</div>
 							</div>
 
 							<div class="field">
 								<label class="label">RUT:</label>
 								<div class="control">
-									<input class="input" type="text" placeholder="77.777.777-7" name="rut">
+									<input class="input" type="text" placeholder="77.777.777-7" name="rut" required>
 								</div>
 							</div>
 
 							<div class="field">
 								<label class="label">Password:</label>
 								<div class="control">
-									<input class="input" type="password" placeholder="" name="password">
+									<input class="input" type="password" placeholder="" name="password" required>
 								</div>
 							</div>
 
