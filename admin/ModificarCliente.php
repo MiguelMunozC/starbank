@@ -54,7 +54,6 @@
 				</p>
 				<ul class="menu-list">
 					<li><a href="TransferenciaEntreMisCuentas.php">Entre mis Cuentas</a></li>
-					<li><a href="terceros.php">A Terceros</a></li>
 				</ul>
 			</aside>
 		</div>
