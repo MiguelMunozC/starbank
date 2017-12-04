@@ -28,20 +28,20 @@
             <figure class="avatar is-128x128">
               <img src="img/LOGO2.png">
             </figure>
-            <form>
+            <form name="login" action="metodos/login.php" method="post">
               <div class="field">
                 <div class="control">
-                  <input class="input is-large" type="text" placeholder="Rut usuario" autofocus="">
+                  <input class="input is-large" name="rut" type="text" placeholder="Rut usuario" autofocus="">
                 </div>
               </div>
 
               <div class="field">
                 <div class="control">
-                  <input class="input is-large" type="password" placeholder="Clave">
+                  <input class="input is-large" name="pass" type="password" placeholder="Clave">
                 </div>
               </div>
 
-              <a class="button is-block is-info is-large" href="admin/admin.php">Ingresar</a>
+              <input type="submit" class="button is-block is-info is-large" Value="ROLEJO"  >
             </form>
           </div>
           <p class="has-text-grey">

@@ -50,6 +50,7 @@
 				</p>
 				<ul class="menu-list">
 					<li><a href="TransferenciaEntreMisCuentas.php">Entre mis Cuentas</a></li>
+					<li><a href="terceros.php">A Terceros</a></li>
 				</ul>
 			</aside>
 		</div>
@@ -59,33 +60,17 @@
 
 			<div class="colums is-8 field has-addons has-addons-centered">
 				<div class="column is-9">
+				
+				
 					<div class="card is-primary">
-						<header class="card-header">
-							<p class="card-header-title">
-								Eliminar Cliente
-							</p>
-						</header>
-						<div class="card-content">
-							<div class="content">
-								<div class="field ">
-									<div class="label is-normal">
-										<label class="label">Rut</label>
-									</div>
-									<div class="field-body">
-										<div class="field">
-											<div class="control">
-												<input class="input" type="text" placeholder="Rut">
-											</div>
-										</div>
-									</div>
-								</div>
-								<footer class="card-footer">
-									<a href="#" class="card-footer-item">Eliminar</a>
-									<a href="#" class="card-footer-item">Salir</a>
-								</footer>
-							</div>
-						</div>
+					<form action="../metodos/eliminarUsuario.php" method="POST">
+									<input class="input" type="text" name="rut" placeholder="Rut" Required>
+									
+									<input type="submit" name="Eliminar" value="Eliminar" class="card-footer-item"/>
+<a href="#" class="card-footer-item">Salir</a>
+					</form>
 					</div>
+					
 				</div>
 			</div>
 		</div>

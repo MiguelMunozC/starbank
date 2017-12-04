@@ -11,7 +11,7 @@ if (!$conn) {
 	echo $m['message'], "n";
 	exit;
 } else {
-	echo "Conexión con éxito a Oracle!";
+	
 }
 
 ?>

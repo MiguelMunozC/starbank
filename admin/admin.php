@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<?php
+session_start();
+if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
+	print "<script>alert(\"Acceso invalido!\");window.location='admin.php';</script>";
+}
+include "../metodos/metodos.php";
+include "../conexion/conexion.php";
+
+?>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -69,6 +78,7 @@
           </p>
           <ul class="menu-list">
             <li><a >Entre mis Cuentas</a></li>
+            <li><a href="terceros.php">A Terceros</a></li>
           </ul>
         </aside>
       </div>
@@ -85,7 +95,7 @@
           <div class="hero-body">
             <div class="container">
               <h1 class="title">
-                Hola, Usuario.
+                Hola, <?php echo SelectNombre($conn, $_SESSION["user_id"]) ?>.
               </h1>
               <h2 class="subtitle">
                 I hope you are having a great day!

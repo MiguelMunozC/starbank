@@ -54,6 +54,7 @@
 				</p>
 				<ul class="menu-list">
 					<li><a href="TransferenciaEntreMisCuentas.php">Entre mis Cuentas</a></li>
+					<li><a href="terceros.php">A Terceros</a></li>
 				</ul>
 			</aside>
 		</div>
@@ -64,6 +65,7 @@
 			<div class="colums is-8 field has-addons has-addons-centered">
 				<div class="column is-9">
 					<div class="card is-primary">
+					<form action="../metodos/actualizarUsuarios.php" method="POST">
 						<header class="card-header">
 							<p class="card-header-title">
 								Modificar Cliente
@@ -78,7 +80,7 @@
 									<div class="field-body">
 										<div class="field">
 											<div class="control">
-												<input class="input" type="text" placeholder="Rut">
+												<input class="input" type="text" name="rut" placeholder="Rut" Required>
 											</div>
 										</div>
 									</div>
@@ -91,7 +93,7 @@
 									<div class="field-body">
 										<div class="field">
 											<div class="control">
-												<input class="input" type="text" placeholder="Nombre">
+												<input class="input" type="text" name="nombre" placeholder="Nombre">
 											</div>
 										</div>
 									</div>
@@ -104,7 +106,7 @@
 									<div class="field-body">
 										<div class="field">
 											<div class="control">
-												<input class="input" type="text" placeholder="Apellidos">
+												<input class="input" type="text" name="apellido" placeholder="Apellidos">
 											</div>
 										</div>
 									</div>
@@ -117,7 +119,7 @@
 									<div class="field-body">
 										<div class="field">
 											<div class="control">
-												<input class="input" type="password" placeholder="Password">
+												<input class="input" type="password" name="password" placeholder="Password">
 											</div>
 										</div>
 									</div>
@@ -130,7 +132,7 @@
 									<div class="field-body">
 										<div class="field">
 											<div class="control">
-												<input class="input" type="email" placeholder="E-mail">
+												<input class="input" type="email" name="email" placeholder="E-mail">
 											</div>
 										</div>
 									</div>
@@ -138,9 +140,10 @@
 							</div>
 						</div>
 						<footer class="card-footer">
-							<a href="#" class="card-footer-item">Modificar</a>
+							<input type="submit" name="Modificar" value="Modificar" class="card-footer-item"/>
 							<a href="#" class="card-footer-item">Salir</a>
 						</footer>
+						</form>
 					</div>
 				</div>
 			</div>
