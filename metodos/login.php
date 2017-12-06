@@ -11,7 +11,7 @@ if(!empty($_POST)){
 			$pass= $_POST["pass"];
 			$user_id=null;
 			
-			$stid = oci_parse($conn, "SELECT * FROM USUARIO where DNI= :rut AND PASSWORD=:pass");
+			$stid = oci_parse($conn, "SELECT * FROM USUARIO where DNI= :rut AND PASSWORD=:pass AND ACTIVO = 'Y'");
 			
 			oci_bind_by_name($stid, ':rut', $rut);
 			oci_bind_by_name($stid, ':pass', $pass);
@@ -24,16 +24,23 @@ if(!empty($_POST)){
 				}
 			
 			if($user_id==null){
-				//header ("Location: https://www.redtube.com");
+				print "<script>alert(\"Datos Erroneos!\");window.location='../Login.php';</script>";
+				
 			}else{
 				session_start();
 				$_SESSION["user_id"]=$user_id;
 						echo "funca";
 						header ("Location: ../admin/admin.php");		
 			}
-		}
+		}else{
+		print "<script>alert(\"Datos Erroneos!\");window.location='../Login.php';</script>";
 	}
-}
+	}else{
+		print "<script>alert(\"Datos Erroneos!\");window.location='../Login.php';</script>";
+	}
+}else{
+		print "<script>alert(\"Datos Erroneos!\");window.location='../Login.php';</script>";
+	}
 
 
 

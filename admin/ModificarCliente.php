@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<?php
+session_start();
+if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
+	header ("Location: ../login.php");	
+}
+include "../metodos/metodos.php";
+include "../conexion/conexion.php";
+
+?>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -141,7 +150,7 @@
 						</div>
 						<footer class="card-footer">
 							<input type="submit" name="Modificar" value="Modificar" class="card-footer-item"/>
-							<a href="#" class="card-footer-item">Salir</a>
+							<a href="logout.php" class="card-footer-item">Salir</a>
 						</footer>
 						</form>
 					</div>

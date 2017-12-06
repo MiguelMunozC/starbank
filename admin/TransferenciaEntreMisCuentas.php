@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<?php
+session_start();
+if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
+	header ("Location: ../login.php");	
+}
+include "../metodos/metodos.php";
+include "../conexion/conexion.php";
+
+?>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -57,6 +66,7 @@
 
 
 		<div class="column is-9">
+		
 
 			<div class="colums ">
 				<div class="column">
@@ -69,10 +79,11 @@
 						<div class="card-content">
 							<div class="content">
 
-
+								<form action="../metodos/entreMisCuentas.php" method="Post">
 								<div class="field has-addons has-addons-centered">
 
 									<div class="column is-6">
+									
 										<div class="card">
 											<header class="card-header">
 												<p class="card-header-title">
@@ -83,17 +94,17 @@
 												<div class="content">
 													<div class="control">
 														<label class="radio">
-															<input type="radio" name="answer">
+															<input type="radio" name="origen" value="<?php echo CuentaCorriente($conn,$_SESSION["user_id"]);?>">
 															Cuenta corriente
 														</label>
 														<br/>
 														<label class="radio">
-															<input type="radio" name="answer">
+															<input type="radio" name="origen" value="<?php echo LineaCredito($conn,$_SESSION["user_id"]);?>">
 															Linea de Credito
 														</label>
 														<br/>
 														<label class="radio">
-															<input type="radio" name="answer">
+															<input type="radio" name="origen" value="<?php echo TarjetaDeCredito($conn,$_SESSION["user_id"]);?>">
 															Tarjeta de Credito
 														</label>
 													</div>
@@ -112,11 +123,11 @@
 											<div class="card-content">
 												<div class="content">
 
-													<label>$1000</label>
+													<label><?php echo "$",SelectCuentaCorriente($conn, $_SESSION["user_id"]); ?></label>
 													<br>
-													<label>$5000</label>
+													<label><?php echo "$",SelectLineaCredito($conn, $_SESSION["user_id"]); ?></label>
 													<br>
-													<label>1000 USD</label>
+													<label><?php echo "$",SelectTarjetaCredito($conn, $_SESSION["user_id"]); ?> USD</label>
 
 												</div>
 											</div>
@@ -138,17 +149,17 @@
 												<div class="content">
 													<div class="control">
 														<label class="radio">
-															<input type="radio" name="answer">
+															<input type="radio" name="destino" value="<?php echo CuentaCorriente($conn,$_SESSION["user_id"]);?>">
 															Cuenta corriente
 														</label>
 														<br/>
 														<label class="radio">
-															<input type="radio" name="answer">
+															<input type="radio" name="destino" value="<?php echo LineaCredito($conn,$_SESSION["user_id"]);?>">
 															Linea de Credito
 														</label>
 														<br/>
 														<label class="radio">
-															<input type="radio" name="answer">
+															<input type="radio" name="destino" value="<?php echo TarjetaDeCredito($conn,$_SESSION["user_id"]);?>">
 															Tarjeta de Credito
 														</label>
 													</div>
@@ -167,19 +178,20 @@
 										<div class="field-body">
 											<div class="field">
 												<div class="control">
-													<input class="input" type="text" placeholder="Monto">
+													<input class="input" type="number" placeholder="Monto" name="monto">
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 
-
+								
 							</div>
 						</div>
 						<footer class="card-footer">
-							<a href="#" class="card-footer-item">Transferir</a>
-						</footer>
+							<input type="submit" value="Transferir" class="card-footer-item">
+							</footer>
+						</form>
 					</div>
 				</div>
 			</div>

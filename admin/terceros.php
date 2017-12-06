@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<?php
+session_start();
+if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
+	header ("Location: ../login.php");	
+}
+include "../metodos/metodos.php";
+include "../conexion/conexion.php";
+
+?>
 <html>
 <head>
     <meta charset="utf-8">
@@ -73,7 +82,7 @@
             </aside>
         </div>
         <div class="column is-9 ">
-
+		<form action="../metodos/transferencia.php" method="Post">
                 <div class="card">
                     <header class="card-header">
 
@@ -103,17 +112,17 @@
 
                                     <div class="control">
                                         <label class="radio">
-                                            <input type="radio" name="answer">
+                                            <input type="radio" name="origen" value="<?php echo CuentaCorriente($conn,$_SESSION["user_id"]);?>">
                                             Cuenta corriente
                                         </label>
                                         <br/>
                                         <label class="radio">
-                                            <input type="radio" name="answer">
+                                            <input type="radio" name="origen" <?php echo LineaCredito($conn,$_SESSION["user_id"]);?>">
                                             Linea de Credito
                                         </label>
                                         <br/>
                                         <label class="radio">
-                                            <input type="radio" name="answer">
+                                            <input type="radio" name="origen" value="<?php echo TarjetaDeCredito($conn,$_SESSION["user_id"]);?>">
                                             Tarjeta de Credito
                                         </label>
                                     </div>
@@ -139,11 +148,11 @@
                                 <div class="card-content">
                                     <div class="control">
 
-                                        <label class="">$1000</label>
+                                        <label class=""><?php echo "$",SelectCuentaCorriente($conn, $_SESSION["user_id"]); ?></label>
                                         <br/>
-                                        <label class="">$20000</label>
+                                        <label class=""><?php echo "$",SelectLineaCredito($conn, $_SESSION["user_id"]); ?></label>
                                         <br/>
-                                        <label class="">100 USD</label>
+                                        <label class=""><?php echo "$",SelectTarjetaCredito($conn, $_SESSION["user_id"]); ?> USD</label>
                                     </div>
 
                                 </div>
@@ -180,13 +189,13 @@
                                         <br/>
                                         <label class="">Cuenta Corriente</label>
                                         <div class="control">
-                                            <input class="input" type="text" placeholder="Cuenta Corriente">
+                                            <input class="input" name="cuenta" type="text" placeholder="Cuenta Corriente">
                                         </div>
                                     </div>
                                     <div class="field">
                                         <label class="">Monto a Transferir</label>
                                         <div class="control">
-                                            <input class="input" type="text" placeholder="Monto a Transferir">
+                                            <input class="input" name="monto" type="number" placeholder="Monto a Transferir">
                                         </div>
                                     </div>
 
@@ -201,9 +210,10 @@
 
                     </div>
                     <footer class="card-footer">
-                        <a href="#" class="card-footer-item">Transferir</a>
+                        <input type="submit" value="Transferir" class="card-footer-item">
 
                     </footer>
+					</form>
                 </div>
 
 

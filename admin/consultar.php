@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+
+<?php
+session_start();
+if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
+	header ("Location: ../login.php");	
+}
+include "../metodos/metodos.php";
+include "../conexion/conexion.php";
+
+?>
 <html>
 <head>
      <meta charset="utf-8">
@@ -85,15 +95,15 @@
                          <tfoot>
                          <tr>
                               <td>Cuenta Corriente</td>
-                              <td>$2000</td>
+                              <td><?php echo "$",SelectCuentaCorriente($conn, $_SESSION["user_id"]); ?></td>
                          </tr>
                          <tr>
                               <td>Linea de Credito</td>
-                              <td>$2.000.000</td>
+                              <td><?php echo "$",SelectLineaCredito($conn, $_SESSION["user_id"]); ?></td>
                          </tr>
                          <tr>
                               <td>Tarjeta de Credito</td>
-                              <td>2000 US</td>
+                              <td><?php echo "$",SelectTarjetaCredito($conn, $_SESSION["user_id"]); ?> USD</td>
                          </tr>
 
 
@@ -101,7 +111,7 @@
 
 
                     </table>
-                    <a class="button is-link is-inverted" href="admin.php">Salir</a>
+                    <a class="button is-link is-inverted" href="logout.php">Salir</a>
                </div>
           </div>
      </div>

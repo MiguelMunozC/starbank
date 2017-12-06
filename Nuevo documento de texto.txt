@@ -1,14 +1,4 @@
 <!DOCTYPE html>
-
-<?php
-session_start();
-if(!isset($_SESSION["user_id"]) || $_SESSION["user_id"]==null){
-	print "<script>alert(\"Acceso invalido!\");window.location='admin.php';</script>";
-}
-include "../metodos/metodos.php";
-include "../conexion/conexion.php";
-
-?>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -29,7 +19,7 @@ include "../conexion/conexion.php";
 <nav class="navbar is-white">
 	<div class="container">
 		<div class="navbar-brand">
-			<a class="navbar-item brand-text" href="admin.php">
+			<a class="navbar-item brand-text" href="../">
 				<i class="fa fa-star" aria-hidden="true"></i>
 				StarBank
 			</a>
@@ -53,14 +43,14 @@ include "../conexion/conexion.php";
 					<li><a href="Crear.php">Crear</a></li>
 					<li><a href="ModificarCliente.php">Modificar</a></li>
 					<li><a href="EliminarCliente.php">Eliminar</a></li>
-					<li><a href="consultar.php">Consultar Saldo</a></li>
+					<li><a>Consultar Saldo</a></li>
 				</ul>
 				<p class="menu-label">
 					Transacciones
 				</p>
 				<ul class="menu-list">
-					<li><a href="TransferenciaEntreMisCuentas.php">Entre mis Cuentas</a></li>
-					<li><a href="terceros.php">A Terceros</a></li>
+					<li><a>Entre mis Cuentas</a></li>
+					<li><a>A Terceros</a></li>
 				</ul>
 			</aside>
 		</div>
@@ -70,18 +60,33 @@ include "../conexion/conexion.php";
 
 			<div class="colums is-8 field has-addons has-addons-centered">
 				<div class="column is-9">
-				
-				
 					<div class="card is-primary">
-					<form action="../metodos/eliminarUsuario.php" method="POST">
-									<input class="input" type="text" name="rut" placeholder="Rut" Required>
-									
-									<input type="submit" name="Eliminar" value="Eliminar" class="card-footer-item"/>
-					<a href="logout.php" class="card-footer-item">Salir</a>
-					
-					</form>
+						<header class="card-header">
+							<p class="card-header-title">
+								Eliminar Cliente
+							</p>
+						</header>
+						<div class="card-content">
+							<div class="content">
+								<div class="field ">
+									<div class="label is-normal">
+										<label class="label">Rut</label>
+									</div>
+									<div class="field-body">
+										<div class="field">
+											<div class="control">
+												<input class="input" type="text" placeholder="Rut">
+											</div>
+										</div>
+									</div>
+								</div>
+								<footer class="card-footer">
+									<a href="#" class="card-footer-item">Eliminar</a>
+									<a href="#" class="card-footer-item">Salir</a>
+								</footer>
+							</div>
+						</div>
 					</div>
-					
 				</div>
 			</div>
 		</div>
